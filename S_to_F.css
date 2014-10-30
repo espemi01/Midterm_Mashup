@@ -32,6 +32,10 @@ div#spotify {
     font-family: verdana;
     position: fixed;
 }
+ul{
+    list-style-type: none;
+    padding: 0px;
+}
 h1{
     color: #3c3c3c;
     font-family: verdana;
