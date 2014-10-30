@@ -15,19 +15,21 @@
         <h1>Facebook to Spotify!</h1>
         <img src="icon.png" width="15%" alt="S_F" style="float:right;">
     </menu>
+    
+    <bar>
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        </fb:login-button>
 
-    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-    </fb:login-button>
+        <div id="status">
+        </div>
 
-    <div id="status">
-    </div>
-
-    <div
-      class="fb-like"
-      data-share="true"
-      data-width="450"
-      data-show-faces="true">
-    </div>
+        <div
+          class="fb-like"
+          data-share="true"
+          data-width="450"
+          data-show-faces="true">
+        </div>
+    </bar>
 
 </body>  
 </html>
