@@ -2,7 +2,6 @@
 
 body {
 	background-color: #fff;
-    margin: 0;
     padding: 0;
 }
 menu {
@@ -10,18 +9,15 @@ menu {
     height: 100px;
     left: 0;
     top: 0;
-    float:left;
-    position: relative;
-    padding: 0;
+    position: fixed;
+    padding-right: 10px;
 }
 bar {
     width: 50%;
     height: 100px;
     right: 0;
     top: 0;
-    position: relative;
-    float: right;
-       
+    position: fixed;
 }
 h1{
     color: #3c3c3c;
