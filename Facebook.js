@@ -103,7 +103,7 @@ function giveMusic(response) {
 //    
 //    console.log(result);
                   
-    FB.api('/me',function(response) {
+    FB.api('/me/music',response.authResponse.accessToken,function(response) {
         console.log('got music for:' + response.name);
         document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
     });
