@@ -27,8 +27,7 @@ div#spotify {
     padding-top:100px;
     background-color:#3C3C3C;
     font-family:verdana;
-    float: left;
-    position: absolute;
+    position: relative;
 }
 h1{
     color: #3c3c3c;
