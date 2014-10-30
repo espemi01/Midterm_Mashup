@@ -98,7 +98,7 @@ FB.api('/me', function(response) {
 function giveMusic(response) {
     
     parameters = response.accessToken
-    r = requests.get(https://graph.facebook.com/me/music',params=parameters)
+    r = requests.get('https://graph.facebook.com/me/music',params=parameters)
     result = json.lloads(r.text)
     
     console.log(result);
