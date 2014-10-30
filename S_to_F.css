@@ -25,9 +25,10 @@ bar {
 div#spotify {
     bottom: 0px;
     width: 100%;
-    padding-top:100px;
-    background-color:#3C3C3C;
-    font-family:verdana;
+    height: 50%;
+    padding-top: 10px;
+    background-color: #3C3C3C;
+    font-family: verdana;
     position: fixed;
 }
 h1{
