@@ -100,7 +100,7 @@ function giveMusic() {
     FB.api('/me/music',param,function(response) {
       if(response && response.error){
         console.log('got music for:' + response.name);
-        console.log(response)
+        console.log(response.value)
         document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
       }
     });
