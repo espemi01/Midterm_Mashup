@@ -26,7 +26,7 @@ console.log(response);
 if (response.status === 'connected') {
   // Logged into your app and Facebook.
   testAPI();
-  giveMusic();
+  giveMusic(response);
 } else if (response.status === 'not_authorized') {
   // The person is logged into Facebook, but not your app.
   document.getElementById('status').innerHTML = 'Please log ' +
@@ -95,9 +95,9 @@ FB.api('/me', function(response) {
 });
 }
 
-function giveMusic() {
+function giveMusic(response) {
     
-    parameters = ['access_token': FB.getAuthResponse()['accessToken']}
+    parameters = ['access_token': response.accessToken}
     r = requests.get(https://graph.facebook.com/me/music',params=parameters)
     result = json.lloads(r.text)
     
