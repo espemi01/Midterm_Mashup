@@ -96,6 +96,12 @@ FB.api('/me', function(response) {
 }
 
 function giveMusic() {
+    FB.api('/me', function(response) {
+    console.log('Successful login for: ' + response.name);
+    document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';
+});
+    
     //var access_token = FB.getAuthResponse()['accessToken'];
     FB.api('/me/music',response.access_token,function(response) {
         console.log('got music for:' + response.name);
