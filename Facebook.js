@@ -102,8 +102,8 @@ function giveMusic() {
         'Thanks for logging in, ' + response.name + '!';
 });
     
-    //var access_token = FB.getAuthResponse()['accessToken'];
-    FB.api('/me/music',response.access_token,function(response) {
+    var access_token = FB.getAuthResponse()['accessToken'];
+    FB.api('/me/music',access_token,function(response) {
         console.log('got music for:' + response.name);
         document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
     });
