@@ -23,6 +23,7 @@ bar {
     text-align: right;
 }
 div#spotify {
+    bottom: 0px;
     width: 100%;
     padding-top:100px;
     background-color:#3C3C3C;
