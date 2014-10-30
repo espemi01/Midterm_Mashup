@@ -1,0 +1,41 @@
+/* Main Page Stuff */
+
+body {
+	background-color: #fff;
+}
+
+h1{
+    color: #3c3c3c;
+    font-family: verdana;
+}
+
+p {
+	color: Black;
+	font-family: verdana;
+}
+
+a:link {
+	color: #3c3c3c;
+    text-shadow: 1px 1px black;
+	text-decoration: none;
+	font-family: verdana;
+}
+a:visited {
+	color: #000;
+	text-decoration: none;
+	font-family: verdana;
+}
+a:hover {
+	color: #00c606;
+    text-shadow: 2px 2px black;
+	font-family: verdana;
+}
+a:active {
+	color: #3c3c3c;
+    text-shadow: 1px 1px black;
+	text-decoration: none;
+	font-family: verdana;
+}
+
+/* Other Stuff? */
+
