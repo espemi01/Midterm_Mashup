@@ -28,6 +28,9 @@ bar2 {
     overflow: scroll;
     background-color:#3C3C3C;
     font-family:verdana;
+    float:none;
+    align-content:center;
+    position:relative;
 }
 h1{
     color: #3c3c3c;
