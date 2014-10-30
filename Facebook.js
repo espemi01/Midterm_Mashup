@@ -26,7 +26,7 @@ console.log(response);
 if (response.status === 'connected') {
   // Logged into your app and Facebook.
   testAPI();
-  giveMusic(response);
+  giveMusic();
 } else if (response.status === 'not_authorized') {
   // The person is logged into Facebook, but not your app.
   document.getElementById('status').innerHTML = 'Please log ' +
@@ -95,10 +95,13 @@ FB.api('/me', function(response) {
 });
 }
 
-function giveMusic(response) {
+function giveMusic() {
     var param = {access_token: "CAACEdEose0cBANtYs654LZAy2RO6zj4H50y6e69HPfJnoBdJp4HhpZBDPBcwJDNWfrEB9ByiYjq3iHKvvIwfPsaELA59xoGqZCdKmlPQZCVRH0E7DKI8O0YgxaMGaKmSLTPwHsQTYcPHnHSgrzZCxCcjZBI3Mthx9iIxD6MmeZAZBgXWCvUZCofNV8d36AMI4m6TEyo1gcqU6lv32FYtJGDle"};
     FB.api('/me/music',param,function(response) {
+      if(response && response.error){
         console.log('got music for:' + response.name);
+        console.log(response)
         document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
+      }
     });
 }
