@@ -22,7 +22,7 @@ bar {
     position: absolute;
     text-align: right;
 }
-section {
+div#spotify {
     width: 100%;
     bottom:0px;
     background-color:#3C3C3C;
