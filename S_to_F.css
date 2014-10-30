@@ -2,8 +2,25 @@
 
 body {
 	background-color: #fff;
+    margin: 0;
 }
-
+menu {
+    width: 50%;
+    height: 100px;
+    left: 0;
+    top: 0;
+    float:left;
+    position: relative;
+}
+bar {
+    width: 50%;
+    height: 100px;
+    right: 0;
+    top: 0;
+    position: relative;
+    float: right;
+    
+}
 h1{
     color: #3c3c3c;
     font-family: verdana;
@@ -13,14 +30,6 @@ h1{
 p {
 	color: Black;
 	font-family: verdana;
-}
-menu {
-    width: 50%;
-    height: 50%;
-    right: 0;
-    top: 0;
-    float:left;
-    position: relative;
 }
 a:link {
 	color: #3c3c3c;
