@@ -96,14 +96,14 @@ FB.api('/me', function(response) {
 }
 
 function giveMusic() {
-    FB.api('/me', function(response) {
-    console.log('Successful login for: ' + response.name);
-    document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!';
-});
     
-    var access_token = FB.getAuthResponse()['accessToken'];
-    FB.api('/me/music',access_token,function(response) {
+    parameters = ['access_token': TOKEN}
+    r = requests.get(https://graph.facebook.com/me/music',params=parameters)
+    result = json.lloads(r.text)
+    
+    console.log(result);
+                  
+    FB.api('/me',function(response) {
         console.log('got music for:' + response.name);
         document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
     });
