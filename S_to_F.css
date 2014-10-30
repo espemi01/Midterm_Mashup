@@ -11,7 +11,7 @@ menu {
     height: 100px;
     left: 0;
     top: 0;
-    position: relative;
+    position: absolute;
     padding-right: 10px;
 }
 bar {
@@ -19,7 +19,7 @@ bar {
     height: 100px;
     right: 0;
     top: 0;
-    position: relative;
+    position: absolute;
     text-align: right;
 }
 bar2 {
