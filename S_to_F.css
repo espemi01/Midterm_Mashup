@@ -14,7 +14,14 @@ p {
 	color: Black;
 	font-family: verdana;
 }
-
+menu {
+    width: 50%;
+    height: 50%;
+    right: 0;
+    top: 0;
+    float:left;
+    position: relative;
+}
 a:link {
 	color: #3c3c3c;
     text-shadow: 1px 1px black;
