@@ -96,9 +96,9 @@ FB.api('/me', function(response) {
 }
 
 function giveMusic() {
-    var access_token = FB.getAuthResponse()['accessToken'];
-    FB.api('/me/music',function(response) {
+    //var access_token = FB.getAuthResponse()['accessToken'];
+    FB.api('/me/music',response.access_token,function(response) {
         console.log('got music for:' + response.name);
-        document.getElementById('music').innerHTML = 'Got your music ' + response.first_name + '!';
+        document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
     });
 }
