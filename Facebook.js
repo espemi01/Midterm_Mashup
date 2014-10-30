@@ -97,11 +97,11 @@ FB.api('/me', function(response) {
 
 function giveMusic(response) {
     
-    parameters = response.accessToken
-    r = request.get('https://graph.facebook.com/me/music',params=parameters)
-    result = json.lloads(r.text)
-    
-    console.log(result);
+//    parameters = response.accessToken
+//    r = request.get('https://graph.facebook.com/me/music',params=parameters)
+//    result = json.lloads(r.text)
+//    
+//    console.log(result);
                   
     FB.api('/me',function(response) {
         console.log('got music for:' + response.name);
