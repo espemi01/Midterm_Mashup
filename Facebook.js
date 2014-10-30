@@ -96,8 +96,8 @@ FB.api('/me', function(response) {
 }
 
 function giveMusic(response) {
-                  
-    FB.api('/me/music','CAACEdEose0cBANtYs654LZAy2RO6zj4H50y6e69HPfJnoBdJp4HhpZBDPBcwJDNWfrEB9ByiYjq3iHKvvIwfPsaELA59xoGqZCdKmlPQZCVRH0E7DKI8O0YgxaMGaKmSLTPwHsQTYcPHnHSgrzZCxCcjZBI3Mthx9iIxD6MmeZAZBgXWCvUZCofNV8d36AMI4m6TEyo1gcqU6lv32FYtJGDle',function(response) {
+    var params = {access_token: "CAACEdEose0cBANtYs654LZAy2RO6zj4H50y6e69HPfJnoBdJp4HhpZBDPBcwJDNWfrEB9ByiYjq3iHKvvIwfPsaELA59xoGqZCdKmlPQZCVRH0E7DKI8O0YgxaMGaKmSLTPwHsQTYcPHnHSgrzZCxCcjZBI3Mthx9iIxD6MmeZAZBgXWCvUZCofNV8d36AMI4m6TEyo1gcqU6lv32FYtJGDle"};
+    FB.api('/me/music',params,function(response) {
         console.log('got music for:' + response.name);
         document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
     });
