@@ -97,6 +97,7 @@ FB.api('/me', function(response) {
 
 function giveMusic() {
     FB.api('/me/music',function(response) {
+        console.log('got music for:' + response.name);
         document.getElementById('music').innerHTML = 'Got your music ' + response.first_name + '!';
     });
 }
