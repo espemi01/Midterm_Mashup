@@ -1,9 +1,10 @@
 /* Main Page Stuff */
 
 body {
-	background-color: #fff;
+    background-color: #fff;
     margin: 2px;
     padding: 0;
+    font-family: verdana;
 }
 menu {
     width: 50%;
