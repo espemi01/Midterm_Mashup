@@ -12,6 +12,7 @@ menu {
     top: 0;
     float:left;
     position: relative;
+    padding: 0;
 }
 bar {
     width: 50%;
