@@ -43,7 +43,7 @@ getArtistID = function(name) {
     console.log(name)
     var theResource = 'http://ws.spotify.com/search/1/artist.json?q='+name
     
-    request.open('GET',theResource,true)
+    request.open('GET',theResource,true,'21110200b1da4bf7a591bc91b16ef0f0')
     
     request.send(null)
 }
