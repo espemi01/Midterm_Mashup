@@ -44,7 +44,7 @@ getArtistID = function(name) {
     var theResource = 'http://ws.spotify.com/search/1/artist.json?q='+name
     
     request.open('GET',theResource,true)
-    request.setRequestHeader("Access-Control-Allow-Origin": 'espemi01.github.io')
+    request.setRequestHeader(Access-Control-Allow-Origin: 'espemi01.github.io')
     request.send(null)
     request.onreadystatechange = function() {
         if (request.readyState == 4)
