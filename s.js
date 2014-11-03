@@ -47,8 +47,8 @@ getArtistID = function(name) {
     
     request.open('GET', theResource , true)
     request.setRequestHeader('Access-Control-Allow-Origin','http://espemi01.github.io')
-    request.setRequestHeader('Access-Control-Request-Method','GET')
-    request.setRequestHeader('Access-Control-Request-Headers','X-Custom-Header')
+    request.setRequestHeader('Content-Type','application/xml')
+    request.setRequestHeader('Access-Control-Allow-Origin','https://ws.spotify.com')
     
     request.send(null)	
 }
