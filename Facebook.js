@@ -86,24 +86,27 @@ fjs.parentNode.insertBefore(js, fjs);
 
 // Here we run a very simple test of the Graph API after login is
 // successful.  See statusChangeCallback() for when this call is made.
-function testAPI() {
-console.log('Welcome!  Fetching your information.... ');
-FB.api('/me', function(response) {
-  console.log('Successful login for: ' + response.name);
-  document.getElementById('status').innerHTML =
-    'Thanks for logging in, ' + response.name + '!';
-});
-}
+//function testAPI() {
+//console.log('Welcome!  Fetching your information.... ');
+//FB.api('/me', function(response) {
+//  console.log('Successful login for: ' + response.name);
+//  document.getElementById('status').innerHTML =
+//    'Thanks for logging in, ' + response.name + '!';
+//});
+//}
 
 function giveMusic() {
     
-    var accessToken = response.authResponse.accessToken;
-    FB.api('/me/music?access_token='+accessToken,function(response) {
-      if(response && !response.error){
-        console.log('got music for:' + response.name);
-        document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
-        
-        console.log(response.responseText)
-      }
-    });
+    FB.api('/me',function(response) {
+        var accessToken = response.authResponse.accessToken;
+
+        FB.api('/me/music?access_token='+accessToken,function(response) {
+          if(response && !response.error){
+            console.log('got music for:' + response.name);
+            document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
+
+            console.log(response.responseText)
+          }
+        });
+    }
 }
