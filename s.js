@@ -15,23 +15,6 @@ callback = function(artistID) {
     widget.style.frameborder = 0;
     widgetlist.appendChild(widget);
 }
-artistName = function() {
-    x = document.getElementById("input").value;
-    uName = x.split(' ').join('_')
-    return uName
-}
-getArtistID = function(name) {
-    var request = new XMLHttpRequest()
-
-    request.onreadystatechange = sc();
-    theartist = artistmaker(artname)
-    console.log(theartist)
-    var theResource = 'http://ws.spotify.com/search/1/artist.json?q='+theartist
-    request.open('GET', theResource , true)
-    request.setRequestHeader('Access-Control-Allow-Origin':'espemi01.github.io')
-
-    request.send(null)	
-}
 sc = function(){
     if (request.readyState == 4){   //
         if (request.status == 200){  //successful request OK
@@ -51,4 +34,21 @@ sc = function(){
 
         }
     }
+}
+artistName = function() {
+    x = document.getElementById("artistIN").value;
+    name = x.split(' ').join('_')
+    return name
+}
+getArtistID = function(name) {
+    var request = new XMLHttpRequest()
+
+    request.onreadystatechange = sc();
+    theartist = artistmaker(artname)
+    console.log(theartist)
+    var theResource = 'http://ws.spotify.com/search/1/artist.json?q='+theartist
+    request.open('GET', theResource , true)
+    request.setRequestHeader('Access-Control-Allow-Origin':'espemi01.github.io')
+
+    request.send(null)	
 }
