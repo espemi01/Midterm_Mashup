@@ -96,7 +96,7 @@ FB.api('/me', function(response) {
 }
 
 function giveMusic() {
-    var param = {'access_token': "CAACEdEose0cBANtYs654LZAy2RO6zj4H50y6e69HPfJnoBdJp4HhpZBDPBcwJDNWfrEB9ByiYjq3iHKvvIwfPsaELA59xoGqZCdKmlPQZCVRH0E7DKI8O0YgxaMGaKmSLTPwHsQTYcPHnHSgrzZCxCcjZBI3Mthx9iIxD6MmeZAZBgXWCvUZCofNV8d36AMI4m6TEyo1gcqU6lv32FYtJGDle"};
+    var param = {'access_token': "CAACEdEose0cBADkcdkGdTrZBLf5M0D9osuK4urGViNF4uFIGuZBX4tP3sO8Aw7tbSpHnbP2BxPlqq3g7lAeF8GAcDyluE6aqDsMhpVRrO7cViKtHZBbcfMObJVoLQzdpQK3P1GDqAiZAFR905PltTrXpzZA34H2jQuU0raVLD4RdQkZAoJuC2GEC9fgB8MkXDyQRfUVyhZC01RswKn2XPJg"};
     FB.api('/me?fields=name,music',param,function(response) {
       if(response && response.error){
         console.log('got music for:' + response.name);
