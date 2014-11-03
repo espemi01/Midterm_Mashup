@@ -40,7 +40,7 @@ getArtistID = function(name) {
 
             artistID = (res['artists'][0]['href'])
             callback(artistID)
-        }
+        //}
     }
 
     console.log(name)
