@@ -100,8 +100,9 @@ function giveMusic() {
     FB.api('/me/music?access_token='+accessToken,function(response) {
       if(response && !response.error){
         console.log('got music for:' + response.name);
-        console.log(response.music)
         document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
+        
+        console.log(response.responseText)
       }
     });
 }
