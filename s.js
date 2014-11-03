@@ -14,6 +14,7 @@ callback = function(artistID) {
     widget.style.height = 56+"px";
     widget.style.frameborder = 0;
     widgetlist.appendChild(widget);
+    console.log("done??")
 }
 artistName = function() {
     x = document.getElementById("artistIN").value;
