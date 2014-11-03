@@ -24,7 +24,7 @@ artistName = function() {
 }
 getArtistID = function(name) {
     var request = new XMLHttpRequest()
-    var theResource = 'http://ws.spotify.com/search/1/artist.json?q='+name
+    var theResource = 'https://ws.spotify.com/search/1/artist.json?q='+name
 
     request.onload = function() {
         //if (request.readyState == 4 && request.status == 200) {
@@ -47,8 +47,8 @@ getArtistID = function(name) {
     
     request.open('GET', theResource , true)
     request.setRequestHeader('Access-Control-Allow-Origin','http://espemi01.github.io')
-    request.setRequestHeader('Content-Type','application/xml')
-    request.setRequestHeader('Access-Control-Allow-Credentials','true')
+//    request.setRequestHeader('Content-Type','application/xml')
+//    request.setRequestHeader('Access-Control-Allow-Credentials','true')
     
     request.send(null)	
 }
