@@ -96,10 +96,10 @@ fjs.parentNode.insertBefore(js, fjs);
 //}
 
 function giveMusic() {
-    FB.api('/me',function(response)) {
+    FB.api('/me',function(response) {
         var accessToken = response.authResponse.accessToken;
 
-        FB.api('/me/music?access_token='+accessToken,function(response)) {
+        FB.api('/me/music?access_token='+accessToken,function(response) {
           if(response && !response.error){
             console.log('got music for:' + response.name);
             document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
@@ -107,5 +107,5 @@ function giveMusic() {
             console.log(response.responseText)
           }
         });
-    }
+    });
 }
