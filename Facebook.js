@@ -96,6 +96,7 @@ FB.api('/me', function(response) {
 }
 
 function giveMusic() {
+    
     var accessToken = response.authResponse.accessToken;
     FB.api('/me/music?access_token='+accessToken,function(response) {
       if(response && !response.error){
