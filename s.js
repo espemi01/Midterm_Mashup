@@ -6,6 +6,7 @@ CW = function() {
     widgetList = document.querySelector("#widgetlist");
     widget = document.createElement("IFRAME");
     var name = artistName();
+    console.log(name)
     //getArtistID(name);
 }
 //callback = function(artistID) {
