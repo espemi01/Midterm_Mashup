@@ -99,17 +99,12 @@ function giveMusic() {
     FB.api('/me',function(response) {
         var accessToken = FB.getLoginStatus(function(response) {
             if (response.status === 'connected') {
-                console.log(response.authResponse.accessToken);
+                FB.api('/me/music?access_token='+accessToken,function(response) {
+                    if(response && !response.error){
+                    console.log('got music for:' + response.name);
+                    document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
+                    console.log(response.name)
             }
-        });
-
-        FB.api('/me/music?access_token='+accessToken,function(response) {
-          if(response && !response.error){
-            console.log('got music for:' + response.name);
-            document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
-
-            console.log(response.responseText)
-          }
         });
     });
 }
