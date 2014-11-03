@@ -5,7 +5,7 @@
 CW = function() {
     widgetList = document.querySelector("#widgetlist");
     widget = document.createElement("IFRAME");
-    //var name = artistName();
+    var name = artistName();
     //getArtistID(name);
 }
 //callback = function(artistID) {
@@ -35,11 +35,12 @@ CW = function() {
 //        }
 //    }
 //}
-//artistName = function() {
-//    x = document.getElementById("artistIN").value;
-//    name = x.split(' ').join('_')
-//    return name
-//}
+artistName = function() {
+    x = document.getElementById("artistIN").value;
+    name = x.split(' ').join('_')
+    console.log(name)
+    return name
+}
 //getArtistID = function(name) {
 //    var request = new XMLHttpRequest()
 //
