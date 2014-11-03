@@ -97,10 +97,10 @@ FB.api('/me', function(response) {
 
 function giveMusic() {
     var accessToken = 'CAAECaQUuTn4BALyE5hpgKrLRMpdWBwJYKwfAiMbS63OPKyROS8VVL8pS4uTZAhO821cdygQZBv4NMFtHC2eMK0ZCxDSPGFI89FjeHfXcMbZAUOQtZBZCyHEiNDrxqZBegST7H2b0WkAIi97BiQuWwuSviQ0cZBDSCbbL0iqX18jf70bqcVN6OmclwLCeeZBqhguDQDZCZB3nRdAick2VMB4Cala'//response.authResponse.accessToken;
-    FB.api('/me?access_token='+accessToken,function(response) {
+    FB.api('/me/music?access_token='+accessToken,function(response) {
       if(response && !response.error){
         console.log('got music for:' + response.name);
-        console.log(response.value)
+        console.log(response.music)
         document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
       }
     });
