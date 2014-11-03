@@ -23,7 +23,7 @@ artistName = function() {
 }
 getArtistID = function(name) {
     var request = new XMLHttpRequest()
-    var theResource = 'http://ws.spotify.com/search/1/artist.json?q='+theartist
+    var theResource = 'http://ws.spotify.com/search/1/artist.json?q='+name
 
     request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status == 200) {
