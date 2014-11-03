@@ -25,7 +25,7 @@ console.log(response);
 // for FB.getLoginStatus().
 if (response.status === 'connected') {
   // Logged into your app and Facebook.
-  testAPI();
+  //testAPI();
   giveMusic();
 } else if (response.status === 'not_authorized') {
   // The person is logged into Facebook, but not your app.
