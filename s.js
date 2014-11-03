@@ -46,8 +46,8 @@ getArtistID = function(name) {
     request.open('GET',theResource,true)
     request.setRequestHeader(Access-Control-Allow-Origin: 'espemi01.github.io')
     request.send(null)
-    request.onreadystatechange = function() {
-        if (request.readyState == 4)
-            show(request.responseText.length);
-    };
+//    request.onreadystatechange = function() {
+//        if (request.readyState == 4)
+//            show(request.responseText.length);
+//    };
 }
