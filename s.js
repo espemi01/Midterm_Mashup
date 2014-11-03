@@ -8,7 +8,7 @@ createWidget = function() {
     var name = artistName();
     getArtistID(name);
 }
-makeButton = function(artistID) {
+callback = function(artistID) {
     widget.setAttribute("src","https://embed.spotify.com/follow/1/?uri="+artistID+"&size=detail &theme=dark");
     widget.style.width = 300+"px";
     widget.style.height = 56+"px";
@@ -22,32 +22,34 @@ artistName = function() {
 }
 getArtistID = function(name) {
     var request = new XMLHttpRequest()
-    
-    request.onreadystatechange = function() {
-        if (request.readyState == 4){ //
-            if (request.status == 200){
-                console.log(request.responseText)
-                
-                var res = eval('(' + request.responseText + ')')
-                var count = res['resultsCount']
-                var limit = res['resultsLimit']
-                
-                if (count>limit)
-                    count = limit
-                
-                artistID = (res['artists'][0]['href'])
-                callback(artistID)
-            }
+
+    request.onreadystatechange = sc
+    theartist = artistmaker(artname)
+    console.log(theartist)
+    var theResource = 'http://ws.spotify.com/search/1/artist.json?q='+theartist
+    request.open('GET', theResource , true)
+    request.setRequestHeader('Access-Control-Allow-Origin':'espemi01.github.io')
+
+    request.send(null)	
+}
+sc = function(){
+
+    if (request.readyState == 4){   //
+        if (request.status == 200){  //successful request OK
+
+            console.log(request.responseText)
+
+            var res = eval( '(' + request.responseText + ')' )
+
+            var count = res['resultsCount']
+            var limit = res['resultsLimit']
+
+            if (count>limit)
+                count = limit
+
+            artistID = (res['artists'][0]['href'])
+            callback(artistID)
+
         }
     }
-    console.log(name)
-    var theResource = 'http://ws.spotify.com/search/1/artist.json?q='+name
-    
-    request.open('GET',theResource,true)
-    request.setRequestHeader(Access-Control-Allow-Origin: 'espemi01.github.io')
-    request.send(null)
-//    request.onreadystatechange = function() {
-//        if (request.readyState == 4)
-//            show(request.responseText.length);
-//    };
 }
