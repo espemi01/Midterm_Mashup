@@ -97,17 +97,15 @@ fjs.parentNode.insertBefore(js, fjs);
 
 function giveMusic() {
     FB.api('/me',function(response) {
-        response.onload = function(){
-            var accessToken = response.authResponse.accessToken;
+        var accessToken = response.authResponse.accessToken;
 
-            FB.api('/me/music?access_token='+accessToken,function(response) {
-              if(response && !response.error){
-                console.log('got music for:' + response.name);
-                document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
+        FB.api('/me/music?access_token='+accessToken,function(response) {
+          if(response && !response.error){
+            console.log('got music for:' + response.name);
+            document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
 
-                console.log(response.responseText)
-              }
-            });
-        }
+            console.log(response.responseText)
+          }
+        });
     });
 }
