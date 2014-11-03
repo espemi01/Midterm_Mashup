@@ -28,7 +28,7 @@ div#spotify {
     height: 75%;
     box-shadow: 0 0 125px 75px #3C3C3C;
     padding-top: 10px;
-    background-color: #3C3C3C;
+    background-color: #333333;
     font-family: verdana;
     position: fixed;
 }
@@ -37,7 +37,7 @@ ul{
     padding: 0px;
 }
 h1{
-    color: #3c3c3c;
+    color: #333333;
     font-family: verdana;
     float: left;
     text-shadow: 0 0 .3px black;
@@ -48,7 +48,7 @@ p {
 	font-family: verdana;
 }
 a:link {
-	color: #3c3c3c;
+	color: #333333;
     text-shadow: 1px 1px black;
 	text-decoration: none;
 	font-family: verdana;
@@ -64,7 +64,7 @@ a:hover {
 	font-family: verdana;
 }
 a:active {
-	color: #3c3c3c;
+	color: #333333;
     text-shadow: 1px 1px black;
 	text-decoration: none;
 	font-family: verdana;
