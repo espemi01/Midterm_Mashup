@@ -44,7 +44,7 @@ getArtistID = function(name) {
     console.log(name)
     
     request.open('GET', theResource , true)
-    request.setRequestHeader('Access-Control-Allow-Origin: "*"','Origin: http://espemi01.github.io')
+    request.setRequestHeader('Access-Control-Allow-Origin','Origin: http://espemi01.github.io')
     
     request.send(null)	
 }
