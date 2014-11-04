@@ -106,6 +106,12 @@ function giveMusic() {
                     console.log('got music for:' + MR.name);
                     document.getElementById('music').innerHTML = 'Got your music ' + MR.name + '!';
                     console.log(MR.data)
+                    var aList = []
+                    for (i = 0; i < MR.data.length; i++) {
+                        if (MR.data[i].category == 'Musician/band') {
+                            aList.append(MR.data[i].name)
+                            console.log(MR.data[i].name)
+                    }
                 });
             };
         });
