@@ -24,6 +24,7 @@ artistName = function(iName) {
 makeW = function(name) {
     var request = new XMLHttpRequest()
     var theResource = 'https://ws.spotify.com/search/1/artist.json?q='+name
+    var reqLST = []
 
     request.onload = function() {
             console.log(request.responseText)
@@ -45,7 +46,7 @@ makeW = function(name) {
             widget.style.frameborder = none;
             widgetlist.appendChild(widget);
             request.open('GET', theResource , true)
-            request.send(null)	
+            reqLST.push(request)
          }
 
     //console.log(name)
@@ -53,6 +54,7 @@ makeW = function(name) {
     //request.open('GET', theResource , true)
 //    request.setRequestHeader('Access-Control-Allow-Origin','http://espemi01.github.io')
 //    request.setRequestHeader('Content-Type','application/json')
-    
-//    request.send(null)	
+    for (var i = 0; i < reqLst.length; i++) {
+        reqLST[i].send(null)	
+    }
 }
