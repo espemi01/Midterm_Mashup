@@ -117,6 +117,6 @@ function giveMusic() {
         });
     });
     //document.getElementById('aList').innerHTML =  aList;
-    combine(aList)
+    takeMusic(aList)
     //FB.logout()
 }
