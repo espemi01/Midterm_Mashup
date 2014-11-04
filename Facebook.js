@@ -113,9 +113,9 @@ function giveMusic() {
                             aList.push(y)
                             
                             
-                            console.log(y)
-                            console.log(aList[i])
-                            console.log(i)
+                            //console.log(y)
+                            //console.log(aList[i])
+                            //console.log(i)
                         }
                     }
                 });
@@ -133,6 +133,6 @@ function giveMusic() {
 function takeMusic(aList) {
     for (i = 0; i < aList.length(); i++) {
         console.log(tList[i]);
-        console.log(i)
+        console.log(i);
     }
 }
