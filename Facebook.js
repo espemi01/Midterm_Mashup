@@ -122,10 +122,7 @@ function giveMusic() {
             };
         });
     });
-    for (var a = 0; a < aList.length; a++) {
-        console.log(aList[a]);
-        console.log(a);
-    }
+    console.log(aList)
 }
 
 //function takeMusic(iList) {
