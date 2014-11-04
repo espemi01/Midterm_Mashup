@@ -118,5 +118,4 @@ function giveMusic() {
             };
         });
     });
-    document.getElementById('musicList').innerHTML =  aList;
 }
