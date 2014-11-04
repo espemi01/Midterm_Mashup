@@ -96,12 +96,11 @@ fjs.parentNode.insertBefore(js, fjs);
 //}
 
 function giveMusic() {
-    FB.api('/me',function(response) {
+    FB.api('/me/music',,function(response) {
         FB.getLoginStatus(function(loginResp) {
             if (loginResp.status === 'connected'){
                 var AT = loginResp.authResponse.accessToken
                 console.log(AT)
-                console.log(loginResp.name)
                 FB.api('/me/music?access_token='+AT,function(MR) {
                     console.log('got music for:' + MR.name);
                     document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
@@ -118,4 +117,5 @@ function giveMusic() {
         });
     });
     document.getElementById('aList').innerHTML =  aList;
+    return (aList)
 }
