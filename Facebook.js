@@ -132,7 +132,7 @@ function giveMusic() {
 
 function takeMusic(aList) {
     var aList = aList;
-    for (i = 0; i < aList.length(); i++) {
+    for (a = 0; a < aList.length(); a++) {
         console.log(tList[i]);
         console.log(i);
     };
