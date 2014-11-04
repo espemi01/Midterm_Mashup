@@ -122,19 +122,17 @@ function giveMusic() {
             };
         });
     });
-    //document.getElementById('aList').innerHTML =  aList;
-    //console.log(aList.length)
-    
-        
-    MR.onload = takeMusic(aList);
-    //FB.logout()
+    for (var a = 0; a < aList.length; a++) {
+        console.log(aList[a];
+        console.log(a);
+    }
 }
 
-function takeMusic(iList) {
-    var iList = iList;
-    for (var a = 0; a < iList.length; a++) {
-        console.log(iList[a]);
-        console.log(a);
-    };
+//function takeMusic(iList) {
+//    var iList = iList;
+//    for (var a = 0; a < iList.length; a++) {
+//        console.log(iList[a]);
+//        console.log(a);
+//    };
     console.log("hello")
 }
