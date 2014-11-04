@@ -111,6 +111,7 @@ function giveMusic() {
                         if (MR.data[i].category == 'Musician/band') {
                             aList.appendChild(MR.data[i].name)
                             console.log(MR.data[i].name)
+                            console.log(aList.length)
                         }
                     }
                 });
