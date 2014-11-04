@@ -107,15 +107,15 @@ function giveMusic() {
                     var preList = MR.data
                     console.log(MR.data)
                     var aList = []
-                    for (var i = 0; i < preList.length; i++) {
+                    for (var i = 0; i < 5; i++) {
                         if (preList[i].category == 'Musician/band') {
                             var y = preList[i].name
                             aList.push(y)
                             
                             
-                            console.log(y)
-                            console.log(aList[i])
-                            console.log(i)
+//                            console.log(y)
+//                            console.log(aList[i])
+//                            console.log(i)
                         }
                     }
                 });
@@ -126,7 +126,7 @@ function giveMusic() {
     //console.log(aList.length)
     
         
-    takeMusic(aList)
+    takeMusic(aList);
     //FB.logout()
 }
 
