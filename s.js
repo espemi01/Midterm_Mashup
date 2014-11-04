@@ -18,8 +18,13 @@ CW = function(iName) {
 //    widgetlist.appendChild(widget);
 //}
 artistName = function(iName) {
+    if (document.getElementById("artistIN").value == '') {
+        name = iName.split(' ').join('_')
+    }
+    else {
+        name = document.getElementById("artistIN").value;
+    }
     //name = document.getElementById("artistIN").value;
-    name = iName.split(' ').join('_')
     //console.log(name)
     return name
 }
