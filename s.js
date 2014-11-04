@@ -40,7 +40,7 @@ getArtistID = function(name) {
             callback(artistID)
     }
 
-    console.log(name)
+    //console.log(name)
     
     request.open('GET', theResource , true)
 //    request.setRequestHeader('Access-Control-Allow-Origin','http://espemi01.github.io')
