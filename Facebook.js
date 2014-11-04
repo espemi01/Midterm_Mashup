@@ -111,7 +111,7 @@ function giveMusic() {
                         if (MR.data[i].category == 'Musician/band') {
                             console.log(i)
                             aList.push(MR.data[i].name)
-                            //console.log(MR.data[i].name)
+                            console.log(MR.data[i].name)
                             //console.log(aList.length)
                         }
                     }
