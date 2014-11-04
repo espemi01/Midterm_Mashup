@@ -101,7 +101,7 @@ function giveMusic() {
             if (response.status === 'connected'){
                 var AT = response.authResponse.accessToken
                 console.log(AT)
-                FB.api('/me/music?access_token='+accessToken,function(response) {
+                FB.api('/me/music?access_token='+AT,function(response) {
                     console.log(accessToken)
                     console.log('got music for:' + response.name);
                     document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
