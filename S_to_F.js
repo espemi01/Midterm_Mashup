@@ -1,3 +1,4 @@
 combine = function(aList) {
-    console.log(aList);
+    for (i = 0, i < aList.length(), i++) {
+        console.log(aList[i]);
 }
