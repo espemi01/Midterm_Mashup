@@ -113,7 +113,8 @@ function giveMusic() {
                             //console.log(MR.data[i].name)
                         }
                     }
-                    for (i = 0; i < aList.length; i++) {
+                    //num = aList.length
+                    while (aList.length != 0) {
                         CW(aList.pop)
                         //console.log(aList[i])
                     }
