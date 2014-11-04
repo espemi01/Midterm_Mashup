@@ -101,10 +101,10 @@ function giveMusic() {
             if (loginResp.status === 'connected'){
                 var AT = loginResp.authResponse.accessToken
                 console.log(AT)
-                console.log(loginResp.first_name)
+                console.log(loginResp.name)
                 FB.api('/me/music?access_token='+AT,function(MR) {
                     console.log('got music for:' + MR.name);
-                    document.getElementById('music').innerHTML = 'Got your music ' + MR.name + '!';
+                    document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
                     console.log(MR.data)
                     var aList = []
                     for (i = 0; i < MR.data.length; i++) {
