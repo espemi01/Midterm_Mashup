@@ -52,7 +52,7 @@ makeW = function(name) {
     
     request.open('GET', theResource , true)
     reqLST.push(request)
-    for var i = 0; i < reqLST.length; i++) {
+    for (var i = 0; i < reqLST.length; i++) {
         reqLST[i].send(null)
     }
     //snd(reqLST)
