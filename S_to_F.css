@@ -22,8 +22,8 @@ bar {
     position: absolute;
     text-align: right;
 }
-table {
-    border-collapse: collapse;
+li {
+    border:0;
     
 }
 div#spotify {
