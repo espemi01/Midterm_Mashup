@@ -47,6 +47,7 @@ makeW = function(name) {
             widgetlist.appendChild(widget);
             request.open('GET', theResource , true)
             reqLST.push(request)
+            snd(reqLST)
          }
 
     //console.log(name)
@@ -54,7 +55,10 @@ makeW = function(name) {
     //request.open('GET', theResource , true)
 //    request.setRequestHeader('Access-Control-Allow-Origin','http://espemi01.github.io')
 //    request.setRequestHeader('Content-Type','application/json')
-    for (var i = 0; i < reqLst.length; i++) {
-        reqLST[i].send(null)	
+}
+
+snd = function(lst) {
+    for (var i = 0; i < lst.length; i++) {
+        lst[i].send(null)	
     }
 }
