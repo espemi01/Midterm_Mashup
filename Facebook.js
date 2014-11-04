@@ -102,7 +102,7 @@ function giveMusic() {
                 var AT = loginResp.authResponse.accessToken
                 console.log(AT)
                 FB.api('/me/music?access_token='+AT,function(MR) {
-                    console.log('got music for:' + response.name);
+                    console.log('got music for:' + MR.name);
                     document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
                     console.log(MR.data)
                     var aList = []
@@ -118,4 +118,5 @@ function giveMusic() {
     });
     document.getElementById('aList').innerHTML =  aList;
     return (aList)
+    FB.logout()
 }
