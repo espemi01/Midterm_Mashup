@@ -105,7 +105,7 @@ function giveMusic() {
                 FB.api('/me/music?access_token='+AT,function(MR) {
                     console.log('got music for:' + MR.name);
                     document.getElementById('music').innerHTML = 'Got your music ' + MR.name + '!';
-                    console.log(MR.name)
+                    console.log(MR.data)
                 });
             };
         });
