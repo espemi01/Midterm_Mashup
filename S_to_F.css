@@ -22,6 +22,10 @@ bar {
     position: absolute;
     text-align: right;
 }
+table {
+    border-collapse: collapse;
+    
+}
 div#spotify {
     bottom: 0px;
     width: 100%;
