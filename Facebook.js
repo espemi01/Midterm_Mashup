@@ -96,8 +96,8 @@ fjs.parentNode.insertBefore(js, fjs);
 //}
 
 function giveMusic() {
-    FB.api('/me',function(response) { console.log(response.name)
-        FB.getLoginStatus(function(response) {
+    FB.api('/me',function(response) {
+        FB.getLoginStatus(function(response) { console.log(response.name)
             if (response.status === 'connected'){
                 var AT = response.authResponse.accessToken
                 console.log(AT)
