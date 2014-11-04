@@ -131,8 +131,9 @@ function giveMusic() {
 }
 
 function takeMusic(aList) {
+    var aList = aList;
     for (i = 0; i < aList.length(); i++) {
         console.log(tList[i]);
         console.log(i);
-    }
+    };
 }
