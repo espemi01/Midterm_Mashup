@@ -113,11 +113,9 @@ function giveMusic() {
                             //console.log(MR.data[i].name)
                         }
                     }
-                    //num = aList.length
-                    while (aList.length != 0) {
-                        var artist = aList.pop
-                        console.log(artist)
-                        CW(artist)
+                    for (i = 0; i < aList.length; i++) {
+                        CW(aList[i])
+                        //console.log(aList[i])
                     }
                 });
             };
