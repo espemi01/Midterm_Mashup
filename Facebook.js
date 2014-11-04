@@ -131,10 +131,10 @@ function giveMusic() {
 }
 
 function takeMusic(iList) {
-    console.log("hello")
     var iList = iList;
     for (var a = 0; a < iList.length; a++) {
         console.log(iList[a]);
         console.log(a);
     };
+    console.log("hello")
 }
