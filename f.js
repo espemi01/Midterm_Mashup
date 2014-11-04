@@ -114,7 +114,7 @@ function giveMusic() {
                         }
                     }
                     for (i = 0; i < aList.length; i++) {
-                        CW(aList[i])
+                        CW(aList.pop)
                         //console.log(aList[i])
                     }
                 });
