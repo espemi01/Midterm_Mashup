@@ -52,7 +52,9 @@ makeW = function(name) {
     
     request.open('GET', theResource , true)
     reqLST.push(request)
-    snd(reqLST)
+    for var i = 0; i < reqLST.length; i++) {
+        reqLST[i].send(null)
+    //snd(reqLST)
 //    request.setRequestHeader('Access-Control-Allow-Origin','http://espemi01.github.io')
 //    request.setRequestHeader('Content-Type','application/json')
 }
