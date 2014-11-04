@@ -116,7 +116,7 @@ function giveMusic() {
             };
         });
     });
-    document.getElementById('aList').innerHTML =  aList;
+    //document.getElementById('aList').innerHTML =  aList;
     return (aList)
     //FB.logout()
 }
