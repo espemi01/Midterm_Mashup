@@ -118,6 +118,7 @@ function giveMusic() {
 //                            console.log(i)
                         }
                     }
+                    FBcb(aList)
                 });
             };
         });
@@ -125,11 +126,11 @@ function giveMusic() {
     console.log(aList)
 }
 
-//function takeMusic(iList) {
-//    var iList = iList;
-//    for (var a = 0; a < iList.length; a++) {
-//        console.log(iList[a]);
-//        console.log(a);
-//    };
-//    console.log("hello")
-//}
+function FBcb(aList) {
+    var aList = aList;
+    for (var a = 0; a < aList.length; a++) {
+        console.log(aList[a]);
+        console.log(a);
+    };
+    console.log("hello")
+}
