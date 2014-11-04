@@ -9,10 +9,10 @@ CW = function(iName) {
     getArtistID(name);
 }
 callback = function(artistID) {
-    widget.setAttribute("src","https://embed.spotify.com/follow/1/?uri="+artistID+"&size=detail &theme=dark");
-    widget.style.width = 300+"px";
-    widget.style.height = 56+"px";
-    widget.style.frameborder = 0;
+    widget.setAttribute("src","https://embed.spotify.com/follow/1/?uri="+artistID+"&size=detail&theme=dark");
+    widget.style.width = 300;
+    widget.style.height = 56;
+    widget.style.frameborder = none;
     widgetlist.appendChild(widget);
 }
 artistName = function(iName) {
@@ -39,12 +39,12 @@ getArtistID = function(name) {
             artistID = (res['artists'][0]['href'])
             //callback(artistID)
             
-            widget.setAttribute("src","https://embed.spotify.com/follow/1/?uri="+artistID+"&size=detail &theme=dark");
-            widget.style.width = 300+"px";
-            widget.style.height = 56+"px";
-            widget.style.frameborder = 0;
+            widget.setAttribute("src","https://embed.spotify.com/follow/1/?uri="+artistID+"&size=detail&theme=dark");
+            widget.style.width = 300;
+            widget.style.height = 56;
+            widget.style.frameborder = none;
             widgetlist.appendChild(widget);
-    }
+         }
 
     //console.log(name)
     
