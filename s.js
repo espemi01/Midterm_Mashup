@@ -44,7 +44,7 @@ makeW = function(name) {
             widget.setAttribute("src","https://embed.spotify.com/follow/1/?uri="+artistID+"&size=detail&theme=dark");
             widget.style.width = 300;
             widget.style.height = 56;
-            widget.style.frameborder = none;
+            //widget.style.frameborder = none;
             widgetlist.appendChild(widget);
          }
 
