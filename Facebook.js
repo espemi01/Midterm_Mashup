@@ -112,8 +112,8 @@ function giveMusic() {
                             aList.push(MR.data[i].name)
                             console.log(MR.data[i].name)
                         }
-                        console.log(aList.length)
                     }
+                    console.log(aList.length)
                 });
             };
         });
