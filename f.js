@@ -110,7 +110,7 @@ function giveMusic() {
                     for (i = 0; i < MR.data.length; i++) {
                         if (MR.data[i].category == 'Musician/band') {
                             aList.push(MR.data[i].name)
-                            console.log(MR.data[i].name)
+                            //console.log(MR.data[i].name)
                         }
                     }
                     FBcb(aList)
@@ -118,5 +118,5 @@ function giveMusic() {
             };
         });
     });
-    document.getElementById('aList').innerHTML =  aList;
+    document.getElementById('musicList').innerHTML =  aList;
 }
