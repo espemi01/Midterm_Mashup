@@ -123,7 +123,7 @@ function giveMusic() {
         });
     });
     for (var a = 0; a < aList.length; a++) {
-        console.log(aList[a];
+        console.log(aList[a]);
         console.log(a);
     }
 }
@@ -134,5 +134,5 @@ function giveMusic() {
 //        console.log(iList[a]);
 //        console.log(a);
 //    };
-    console.log("hello")
-}
+//    console.log("hello")
+//}
