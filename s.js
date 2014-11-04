@@ -10,13 +10,6 @@ CW = function(iName) {
     var name = artistName(iName);
     makeW(name);
 }
-//callback = function(artistID) {
-//    widget.setAttribute("src","https://embed.spotify.com/follow/1/?uri="+artistID+"&size=detail&theme=dark");
-//    widget.style.width = 300;
-//    widget.style.height = 56;
-//    widget.style.frameborder = none;
-//    widgetlist.appendChild(widget);
-//}
 artistName = function(iName) {
     if (document.getElementById("artistIN").value == '') {
         name = iName.split(' ').join('_')
@@ -24,8 +17,6 @@ artistName = function(iName) {
     else {
         name = document.getElementById("artistIN").value;
     }
-    //name = document.getElementById("artistIN").value;
-    //console.log(name)
     return name
 }
 makeW = function(name) {
@@ -44,7 +35,6 @@ makeW = function(name) {
                 count = limit
 
             artistID = (res['artists'][0]['href'])
-            //callback(artistID)
             
             widget.setAttribute("src","https://embed.spotify.com/follow/1/?uri="+artistID+"&size=detail&theme=dark");
             widget.style.width = 300;
@@ -52,16 +42,7 @@ makeW = function(name) {
             //widget.style.frameborder = none;
             widgetlist.appendChild(widget);
          }
-
-    //console.log(name)
     
     request.open('GET', theResource , false)
     request.send(null)
-//    reqLST.push(request)
-//    for (var i = 0; i < reqLST.length; i++) {
-//        reqLST[i].send(null)
-//    }
-    //snd(reqLST)
-//    request.setRequestHeader('Access-Control-Allow-Origin','http://espemi01.github.io')
-//    request.setRequestHeader('Content-Type','application/json')
 }

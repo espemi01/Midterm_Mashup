@@ -110,12 +110,10 @@ function giveMusic() {
                     for (i = 0; i < MR.data.length; i++) {
                         if (MR.data[i].category == 'Musician/band') {
                             aList.push(MR.data[i].name)
-                            //console.log(MR.data[i].name)
                         }
                     }
                     for (i = 0; i < aList.length; i++) {
                         CW(aList[i])
-                        //console.log(aList[i])
                     }
                 });
             };
