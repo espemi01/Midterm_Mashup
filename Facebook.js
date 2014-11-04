@@ -123,7 +123,6 @@ function giveMusic() {
             };
         });
     });
-    console.log(aList)
 }
 
 function FBcb(aList) {
