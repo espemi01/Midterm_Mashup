@@ -126,7 +126,7 @@ function giveMusic() {
     //console.log(aList.length)
     
         
-    aList.onload = takeMusic(aList);
+    MR.onload = takeMusic(aList);
     //FB.logout()
 }
 
