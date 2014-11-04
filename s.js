@@ -2,6 +2,8 @@
 //Client ID: 21110200b1da4bf7a591bc91b16ef0f0
 //Client Secret: 935c9ccb7de24f9a82a89abc945af306
 
+var reqLST = []
+
 CW = function(iName) {
     widgetList = document.querySelector("#widgetlist");
     widget = document.createElement("IFRAME");
@@ -24,7 +26,6 @@ artistName = function(iName) {
 makeW = function(name) {
     var request = new XMLHttpRequest()
     var theResource = 'https://ws.spotify.com/search/1/artist.json?q='+name
-    var reqLST = []
 
     request.onload = function() {
             console.log(request.responseText)
@@ -45,13 +46,13 @@ makeW = function(name) {
             widget.style.height = 56;
             widget.style.frameborder = none;
             widgetlist.appendChild(widget);
-            reqLST.push(request)
-            snd(reqLST)
          }
 
     //console.log(name)
     
     request.open('GET', theResource , true)
+    reqLST.push(request)
+    snd(reqLST)
 //    request.setRequestHeader('Access-Control-Allow-Origin','http://espemi01.github.io')
 //    request.setRequestHeader('Content-Type','application/json')
 }
