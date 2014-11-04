@@ -113,9 +113,9 @@ function giveMusic() {
                             aList.push(y)
                             
                             
-                            //console.log(y)
-                            //console.log(aList[i])
-                            //console.log(i)
+                            console.log(y)
+                            console.log(aList[i])
+                            console.log(i)
                         }
                     }
                 });
