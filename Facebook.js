@@ -107,7 +107,7 @@ function giveMusic() {
                     var preList = MR.data
                     console.log(MR.data)
                     var aList = []
-                    for (i = 0; i < 5; i++) {
+                    for (var i = 0; i < preList.length; i++) {
                         if (preList[i].category == 'Musician/band') {
                             var y = preList[i].name
                             aList.push(y)
@@ -132,7 +132,7 @@ function giveMusic() {
 
 function takeMusic(iList) {
     var iList = iList;
-    for (a = 0; a < iList.length(); a++) {
+    for (var a = 0; a < iList.length; a++) {
         console.log(iList[a]);
         console.log(a);
     };
