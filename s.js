@@ -2,10 +2,10 @@
 //Client ID: 21110200b1da4bf7a591bc91b16ef0f0
 //Client Secret: 935c9ccb7de24f9a82a89abc945af306
 
-CW = function() {
+CW = function(iName) {
     widgetList = document.querySelector("#widgetlist");
     widget = document.createElement("IFRAME");
-    var name = artistName();
+    var name = artistName(iName);
     getArtistID(name);
 }
 callback = function(artistID) {
@@ -15,9 +15,9 @@ callback = function(artistID) {
     widget.style.frameborder = 0;
     widgetlist.appendChild(widget);
 }
-artistName = function() {
-    x = document.getElementById("artistIN").value;
-    name = x.split(' ').join('_')
+artistName = function(iName) {
+    //name = document.getElementById("artistIN").value;
+    name = iName.split(' ').join('_')
     console.log(name)
     return name
 }

@@ -113,7 +113,10 @@ function giveMusic() {
                             //console.log(MR.data[i].name)
                         }
                     }
-                    FBcb(aList)
+                    for (i = 0; i < aList.length; i++) {
+                        CW(aList[i])
+                        console.log(aList[i])
+                    }
                 });
             };
         });
