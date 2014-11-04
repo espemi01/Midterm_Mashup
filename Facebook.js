@@ -130,10 +130,10 @@ function giveMusic() {
     //FB.logout()
 }
 
-function takeMusic(aList) {
-    var aList = aList;
-    for (a = 0; a < aList.length(); a++) {
-        console.log(tList[i]);
-        console.log(i);
+function takeMusic(iList) {
+    var iList = iList;
+    for (a = 0; a < iList.length(); a++) {
+        console.log(iList[a]);
+        console.log(a);
     };
 }
