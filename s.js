@@ -54,6 +54,7 @@ makeW = function(name) {
     reqLST.push(request)
     for var i = 0; i < reqLST.length; i++) {
         reqLST[i].send(null)
+    }
     //snd(reqLST)
 //    request.setRequestHeader('Access-Control-Allow-Origin','http://espemi01.github.io')
 //    request.setRequestHeader('Content-Type','application/json')
