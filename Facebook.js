@@ -107,7 +107,7 @@ function giveMusic() {
                     var preList = MR.data
                     console.log(MR.data)
                     var aList = []
-                    for (i = 0; i < preList.length; i++) {
+                    for (i = 0; i < 5; i++) {
                         if (preList[i].category == 'Musician/band') {
                             var y = preList[i].name
                             aList.push(y)
@@ -124,7 +124,9 @@ function giveMusic() {
     });
     //document.getElementById('aList').innerHTML =  aList;
     //console.log(aList.length)
-    //takeMusic(aList)
+    
+        
+    takeMusic(aList)
     //FB.logout()
 }
 
