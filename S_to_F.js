@@ -1,6 +1,6 @@
-function takeMusic(aList) {
-    for (i = 0; i < aList.length(); i++) {
-        console.log(aList[i]);
+function takeMusic(tList) {
+    for (i = 0; i < tList.length(); i++) {
+        console.log(tList[i]);
         console.log(i)
     }
 }
