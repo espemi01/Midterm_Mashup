@@ -97,11 +97,11 @@ fjs.parentNode.insertBefore(js, fjs);
 
 function giveMusic() {
     FB.api('/me',function(response) {
-        FB.getLoginStatus(function(loginResp) { console.log(response.name)
+        FB.getLoginStatus(function(loginResp) {
             if (loginResp.status === 'connected'){
                 var AT = loginResp.authResponse.accessToken
                 console.log(AT)
-                console.log(loginResp.name)
+                console.log(loginResp.first_name)
                 FB.api('/me/music?access_token='+AT,function(MR) {
                     console.log('got music for:' + MR.name);
                     document.getElementById('music').innerHTML = 'Got your music ' + MR.name + '!';
