@@ -111,6 +111,7 @@ function giveMusic() {
                             aList.push(MR.data[i].name)
                             console.log(aList[i])
                         }
+                        else{}
                     }
                 });
             };
