@@ -132,5 +132,4 @@ function FBcb(aList) {
         console.log(aList[a]);
         console.log(a);
     };
-    console.log("hello")
 }
