@@ -109,7 +109,7 @@ function giveMusic() {
                     var aList = []
                     for (i = 0; i < preList.length; i++) {
                         if (preList[i].category == 'Musician/band') {
-                            var y = preList.data[i].name
+                            var y = preList[i].name
                             aList.push(y)
                             
                             
