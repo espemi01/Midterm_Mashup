@@ -104,11 +104,12 @@ function giveMusic() {
                 FB.api('/me/music?access_token='+AT,function(MR) {
                     console.log('got music for:' + MR.name);
                     document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
+                    var preList = MR.data
                     console.log(MR.data)
                     var aList = []
-                    for (i = 0; i < MR.data.length; i++) {
-                        if (MR.data[i].category == 'Musician/band') {
-                            var y = MR.data[i].name
+                    for (i = 0; i < preList.length; i++) {
+                        if (preList.data[i].category == 'Musician/band') {
+                            var y = preList.data[i].name
                             aList.push(y)
                             
                             
