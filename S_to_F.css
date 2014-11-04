@@ -22,7 +22,7 @@ bar {
     position: absolute;
     text-align: right;
 }
-li {
+iframe {
     border:0;
 }
 div#spotify {
@@ -35,6 +35,7 @@ div#spotify {
 ul{
     list-style-type: none;
     padding: 0px;
+    margin: 0;
 }
 h1{
     color: #333333;
