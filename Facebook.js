@@ -97,9 +97,10 @@ fjs.parentNode.insertBefore(js, fjs);
 
 function giveMusic() {
     FB.api('/me',function(response) {
-        var AT = FB.getLoginStatus(response)
-            console.log(AT)
+        FB.getLoginStatus(function(response) {
             if (response.status === 'connected'){
+                var AT = response.authResponse.accessToken
+                console.log(AT)
                 FB.api('/me/music?access_token='+accessToken,function(response) {
                     console.log(accessToken)
                     console.log('got music for:' + response.name);
@@ -108,4 +109,5 @@ function giveMusic() {
                 });
             };
         });
+    });
 }
