@@ -102,10 +102,10 @@ function giveMusic() {
                 var AT = loginResp.authResponse.accessToken
                 console.log(AT)
                 console.log(response.name)
-                FB.api('/me/music?access_token='+AT,function(response) {
-                    console.log('got music for:' + response.name);
-                    document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
-                    console.log(response.name)
+                FB.api('/me/music?access_token='+AT,function(MR) {
+                    console.log('got music for:' + MR.name);
+                    document.getElementById('music').innerHTML = 'Got your music ' + MR.name + '!';
+                    console.log(MR.name)
                 });
             };
         });
