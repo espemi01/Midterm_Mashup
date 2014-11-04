@@ -113,9 +113,9 @@ function giveMusic() {
                             console.log(MR.data[i].name)
                         }
                     }
-                    console.log(aList.length)
                 });
             };
         });
     });
+    document.getElementById('aList').innerHTML =  aList;
 }
