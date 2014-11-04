@@ -107,12 +107,11 @@ function giveMusic() {
                     document.getElementById('music').innerHTML = 'Got your music ' + response.name + '!';
                     console.log(MR.data)
                     var aList = []
-                    console.log(MR.data.length)
                     for (i = 0; i < MR.data.length; i++) {
                         if (MR.data[i].category == 'Musician/band') {
                             aList.appendChild(MR.data[i].name)
-                            console.log(MR.data[i].name)
-                            //console.log(aList.length)
+                            //console.log(MR.data[i].name)
+                            console.log(aList.length)
                         }
                     }
                 });
