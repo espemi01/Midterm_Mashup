@@ -109,9 +109,10 @@ function giveMusic() {
                     var aList = []
                     for (i = 0; i < MR.data.length; i++) {
                         if (MR.data[i].category == 'Musician/band') {
-                            aList.appendChild(MR.data[i].name)
+                            console.log(i)
+                            //aList.appendChild(MR.data[i].name)
                             //console.log(MR.data[i].name)
-                            console.log(aList.length)
+                            //console.log(aList.length)
                         }
                     }
                 });
