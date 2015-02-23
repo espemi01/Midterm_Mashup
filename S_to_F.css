@@ -31,7 +31,9 @@ div#spotify {
     height: 75%;
     font-family: verdana;
     position: fixed;
-}
+    a {
+        color: #bababa;
+    }
 ul{
     list-style-type: none;
     padding: 0px;
